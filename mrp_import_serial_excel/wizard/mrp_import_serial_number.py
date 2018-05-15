@@ -116,9 +116,12 @@ class MrpImportSerialNumber(models.TransientModel):
             if product_name in ['notes', 'Notes', 'notas', 'Notas']:
                 while not end_col:
                     try:
+                        # Clean serial (Excel converts values)
+                        clean_value = str(
+                            sheet.cell(row, 0).value).split(".")[0]
+
                         notes_dict.update({
-                            sheet.cell(
-                                row, 0).value: sheet.cell(row, col).value,
+                            clean_value: sheet.cell(row, col).value,
                         })
                         row += 1
                     except IndexError:
@@ -127,7 +130,11 @@ class MrpImportSerialNumber(models.TransientModel):
                 while not end_col:
                     try:
                         if sheet.cell(row, col).value:
-                            serial_numbers.append(sheet.cell(row, col).value)
+                            # Clean serial (Excel converts values)
+                            clean_value = str(
+                                sheet.cell(row, col).value).split(".")[0]
+
+                            serial_numbers.append(clean_value)
                         row += 1
                     except IndexError:
                         end_col = True

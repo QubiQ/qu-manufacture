@@ -4,7 +4,7 @@
 
 {
     "name": "MRP Import Serial Number Excel",
-    "version": "10.0.1.0.0",
+    "version": "10.0.1.0.1",
     "author": "QubiQ",
     "website": "https://www.qubiq.es",
     "category": "MRP",
