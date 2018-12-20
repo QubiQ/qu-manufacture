@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Xavier Piernas <xavier.piernas@qubiq.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="mrp_type_form_view" model="ir.ui.view">
+        <field name="name">mrp.type.form.view</field>
+        <field name="model">mrp.type</field>
+        <field name="arch" type="xml">
+            <form string="MRP Type">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="company_id" readonly="True"/>
+                        <field name="sequence_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mrp_type_tree_view" model="ir.ui.view">
+        <field name="name">mrp.type.tree.view</field>
+        <field name="model">mrp.type</field>
+        <field name="arch" type="xml">
+            <tree string="MRP Type">
+                <field name="name"/>
+                <field name="company_id"/>
+                <field name="sequence_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mrp_type_action" model="ir.actions.act_window">
+        <field name="name">MRP Type</field>
+        <field name="res_model">mrp.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Select to create new MRP Type
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="mrp_type_menu" action="mrp_type_action" name="MRP Type" parent="mrp.menu_mrp_configuration"/>
+</odoo>

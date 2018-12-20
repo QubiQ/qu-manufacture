@@ -1,0 +1,138 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-19 16:06+0000\n"
+"PO-Revision-Date: 2018-12-19 17:07+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: mrp_type
+#: code:addons/mrp_type/models/mrp_type.py:18
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_company_id
+#, python-format
+msgid "Company"
+msgstr "Compañía"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type___last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: mrp_type
+#: code:addons/mrp_type/models/mrp_production.py:13
+#: code:addons/mrp_type/models/product_category.py:13
+#: model:ir.actions.act_window,name:mrp_type.mrp_type_action
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_production_mrp_type
+#: model:ir.model.fields,field_description:mrp_type.field_product_category_mrp_type
+#: model:ir.ui.menu,name:mrp_type.mrp_type_menu
+#: model:ir.ui.view,arch_db:mrp_type.mrp_type_form_view
+#: model:ir.ui.view,arch_db:mrp_type.mrp_type_tree_view
+#, python-format
+msgid "MRP Type"
+msgstr "Tipo de MRP"
+
+#. module: mrp_type
+#: model:ir.ui.view,arch_db:mrp_type.product_category_form_view
+msgid "Manufacturing"
+msgstr "Fabricación"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Orden de fabricación"
+
+#. module: mrp_type
+#: code:addons/mrp_type/models/mrp_type.py:12
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_name
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: mrp_type
+#: code:addons/mrp_type/models/mrp_production.py:22
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_procurement_rule
+msgid "Procurement Rule"
+msgstr "Regla de abastecimiento"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de ventas"
+
+#. module: mrp_type
+#: model:ir.actions.act_window,help:mrp_type.mrp_type_action
+msgid "Select to create new MRP Type"
+msgstr "Selecciona para crear un nuevo tipo de MRP"
+
+#. module: mrp_type
+#: code:addons/mrp_type/models/mrp_type.py:23
+#: model:ir.model.fields,field_description:mrp_type.field_mrp_type_sequence_id
+#, python-format
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de Stock"
+
+#. module: mrp_type
+#: model:ir.model,name:mrp_type.model_mrp_type
+msgid "mrp.type"
+msgstr "mrp.type"
