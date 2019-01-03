@@ -17,6 +17,7 @@
         "sales_team"
     ],
     "data": [
+        "security/ir.model.access.csv",
         "views/mrp_type.xml",
         "views/mrp_production.xml",
         "views/product_category.xml"
